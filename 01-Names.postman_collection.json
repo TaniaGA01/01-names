@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "5e2cc034-1967-4d37-98b5-cbaf7644f98c",
+		"name": "01-Names",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20554372"
+	},
+	"item": [
+		{
+			"name": "createName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Maria\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getNames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names/Fernando/federico",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names",
+						"Fernando",
+						"federico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteName",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names/Fernando",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names",
+						"Fernando"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clearNames",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/api/v1/names/clear",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"names",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
