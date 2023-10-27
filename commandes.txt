@@ -1,0 +1,25 @@
+Commandes Nest.js : https://docs.nestjs.com/cli/usages
+
+CREATION DE MODULES
+1. Créer un dossier MODULES dans SRC
+2. Via le Terminal se situer dans le dossier : cd .\src\modules\
+3. Dans le Terminal ajouter la commande : nest g mo names
+-Il va créér un dossier names + ajouter un fichier names.module.ts
+4. Importer le module créé dans le fichier 'app.module.ts' et l'ajouter dans imports:[]
+
+CREATION DE CONTROLLEUR
+Un controlleur c'est un fichier qui donne support/réponse aux requêtes du serveur
+1. Via le Terminal se situer dans le dossier : cd .\src\modules\
+2. Dans le Terminal ajouter la commande : nest g co names
+-Il va créér dans le fichier names (créé précedement) un fichier names.controller.spec.ts et un autre names.controller.ts. En plus, cette commande ajout le controlleur dans le fichier names.module.ts
+3. Dans ce fichier il y a cette ligne de code "@Controller('names')", il est fort recommandable d'utiliser des version des controlleurs donc la changer par par exemple par "@Controller('api/v1/names')"
+
+CREATION DES SERVICES
+Un service c'est l'endroit où on gère tout la logique
+1. Via le Terminal se situer dans le dossier : cd .\src\modules\
+2. Dans le Terminal ajouter la commande : nest g s names
+-Il va créér deux fichier : names.service.spec.ts et names.service.ts. Cela va ajouter aussi le 'Provider' dans le fichier 'names.module.ts'
+3. Dans le fichier names.service.ts, le "@Injectable()" permet injecter le code dans des autres fichiers, par exemple dans le names.controller.ts. Ici on va créér un constructeur() avec le service (injecter le service).
+
+CREATION ENDPOINTS
+1. Aller sur le controlleur
