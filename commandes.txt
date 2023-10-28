@@ -22,4 +22,11 @@ Un service c'est l'endroit où on gère tout la logique
 3. Dans le fichier names.service.ts, le "@Injectable()" permet injecter le code dans des autres fichiers, par exemple dans le names.controller.ts. Ici on va créér un constructeur() avec le service (injecter le service).
 
 CREATION ENDPOINTS
-1. Aller sur le controlleur
+1. Aller sur le controlleur Créer la fonction souhaitée (Post, Get, Update, Delete) et créer les services de chaque fonction dans le fichier des services
+
+SWAGGER
+Dependence de Nest pour créer la documentation
+1. Installation : npm install --save @nestjs/swagger
+2. On trouve la documentation de l'api ici : http://localhost:3000/swagger
+
+
